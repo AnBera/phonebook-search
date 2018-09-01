@@ -1,6 +1,6 @@
 <p>search box works</p>
 <mat-form-field class="search-box">
-  <input matInput #searchbox placeholder="Search Contacts" 
+  <input matInput #searchbox placeholder="Type Name or Phone no to search..." 
   [(ngModel)]="searchText"
   (input)="onChange(searchbox.value)"
   (keyup.enter)="onChange(searchbox.value)"

@@ -22,7 +22,7 @@ export class ContactsService {
     return this.http.get<ContactCard[]>(this.contactsUrl)
       .pipe(
         tap(heroes => console.log('fetched contacts')),
-        catchError(this.handleError('getHeroes', []))
+        catchError(this.handleError('getContacts', []))
       );
   }
 
