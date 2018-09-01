@@ -1,4 +1,13 @@
-.mat-card-avatar {
-    border: 1px solid #ccc;
-    box-shadow: inset -1px 0px 38px 5px rgba(0, 0, 0, 0.15)
+.mat-card.contact-card {
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.2);
+    .contact-card-avatar {
+        border: 1px solid #ccc;
+        font-size: 1.5em;
+        padding: .5em;
+        height: 30px;
+        width: 30px;
+        box-shadow: inset -1px 0px 38px 5px rgba(0, 0, 0, 0.15)
+    }
 }
