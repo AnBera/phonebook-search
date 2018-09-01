@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Observable, of } from 'rxjs';
+import { Observable, of, BehaviorSubject } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 
 // import { ICard } from '../model/interface/ICard';
@@ -12,6 +12,8 @@ import { ContactCard } from '../model/class/contact-card';
 })
 export class ContactsService {
   private contactsUrl = 'http://localhost:3000/contacts';  // URL to web api
+  private searchText = (new BehaviorSubject<string>(''));
+  currentSearch = this.searchText.asObservable();
 
   constructor(private http: HttpClient) { }
 
@@ -22,6 +24,10 @@ export class ContactsService {
         tap(heroes => console.log('fetched contacts')),
         catchError(this.handleError('getHeroes', []))
       );
+  }
+
+  changeSearchQuery(query: string) {
+    this.searchText.next(query);
   }
 
   private handleError<T> (operation = 'operation', result?: T) {

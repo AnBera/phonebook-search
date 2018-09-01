@@ -9,6 +9,7 @@ import { ContactsService } from '../service/contacts.service';
 })
 export class ContactCardComponent implements OnInit {
   contactCards: ContactCard[] = [];
+  query: string;
 
   constructor(private contactsService: ContactsService) { }
 
@@ -16,6 +17,7 @@ export class ContactCardComponent implements OnInit {
     // this.contactCards = [new ContactCard('Anirban', 9883223453),
     //                     new ContactCard('Murali', 9862635475)];
     this.getCards();
+    this.contactsService.currentSearch.subscribe(query => this.query = query);
   }
 
   getCards(): void {

@@ -1,8 +1,8 @@
 import { ICard } from '../interface/ICard';
 
 export class ContactCard implements ICard {
-    name;
-    contactNo;
+    name:string;
+    contactNo:string;
 
     constructor (name, contactNo) {
         this.name = name;

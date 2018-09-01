@@ -1,4 +1,4 @@
-<mat-card class="contact-card" *ngFor="let indx = index;let card of contactCards">
+<mat-card class="contact-card" *ngFor="let indx = index;let card of contactCards | filter: query">
   <mat-card-header>
     <div mat-card-avatar class="contact-card-avatar">M</div>
     <mat-card-title>{{card.name}}</mat-card-title>
