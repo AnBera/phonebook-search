@@ -15,8 +15,6 @@ export class ContactCardComponent implements OnInit {
   constructor(private contactsService: ContactsService) { }
 
   ngOnInit() {
-    // this.contactCards = [new ContactCard('Anirban', 9883223453),
-    //                     new ContactCard('Murali', 9862635475)];
     this.populateRandomColor();
     this.getCards();
     this.contactsService.currentSearch.subscribe(query => this.query = query);
@@ -44,15 +42,11 @@ export class ContactCardComponent implements OnInit {
   } 
 
   public setStyles(card): any {
-    // var styles;
     if (card.name){
       return {            
         'background-color': this.colorsMap[card.name[0].toLowerCase()]
       }
     }
-         
-    // return styles;
-    // {'background-color' : colorsMap[card.name[0].toString()] }
   }
 
 }

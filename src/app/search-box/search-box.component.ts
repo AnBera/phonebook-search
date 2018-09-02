@@ -18,7 +18,6 @@ export class SearchBoxComponent implements OnInit {
   }
   onChange() {
     this.contactsService.changeSearchQuery(this.searchText);
-    // console.log(this.contactsService.getBookmarkCardDataById("2"));
   }
 
 }

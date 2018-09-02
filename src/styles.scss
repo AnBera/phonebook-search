@@ -2,4 +2,9 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 body {
     background-color: #fcfcfc;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-weight: 200;
+    .center-align {
+        text-align: center;
+    }
 }
