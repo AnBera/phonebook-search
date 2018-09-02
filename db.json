@@ -2,33 +2,53 @@
     "contacts": [
       {
         "id": "1",
-        "name": "John D",
+        "name": "John Lenon",
         "contactNo": "98823454"
       },
       {
         "id": "2",
-        "name": "Mark W",
+        "name": "David Gilmour",
         "contactNo": "1234533"
       },
       {
         "id": "3",
-        "name": "Sara S",
+        "name": "Louis Armstrong",
         "contactNo": "3243454"
       },
       {
         "id": "4",
-        "name": "Brad T",
+        "name": "Johnny Cash",
         "contactNo": "766823454"
-      },
-      {
-        "id": "4",
-        "name": "Josh F",
-        "contactNo": "458823454"
-      },
+      },      
       {
         "id": "5",
         "name": "",
         "contactNo": "576348"
+      },
+      {
+        "id": "6",
+        "name": "John Fogerty",
+        "contactNo": "876454"
+      },
+      {
+        "id": "7",
+        "name": "Bob Dylan",
+        "contactNo": "5476454"
+      },
+      {
+        "id": "8",
+        "name": "Freddie Mercury‎",
+        "contactNo": "876454"
+      },
+      {
+        "id": "9",
+        "name": "Joan Baez",
+        "contactNo": "98987"
+      },
+      {
+        "id": "10",
+        "name": "Beyonce Knowles",
+        "contactNo": "8777654"
       }
     ]
   }

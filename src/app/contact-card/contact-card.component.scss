@@ -3,12 +3,22 @@
     border-radius: 8px;
     box-shadow: 0 2px 15px 0 rgba(0,0,0,0.2);
     .contact-card-avatar {
-        border: 1px solid #ccc;
+        // border: 1px solid #ccc;
         font-size: 1.5em;
+        color: #fcfcfc;
+        background: darkgrey;
         padding: .5em;
+        margin-right: 10px; 
         height: 30px;
         width: 30px;
         text-align: center;
-        box-shadow: inset -1px 0px 38px 5px rgba(0, 0, 0, 0.15)
+        box-shadow: inset -1px 0px 38px 5px rgba(0, 0, 0, 0.40)
+    }
+    .contact-card-name {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    .contact-card-number{
+        margin: -2px auto 0 auto;
     }
 }

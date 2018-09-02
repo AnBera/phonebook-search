@@ -1,7 +1,8 @@
 <mat-card class="contact-card" *ngFor="let indx = index;let card of contactCards | filter: query">
   <mat-card-header>
-    <div mat-card-avatar class="contact-card-avatar">{{card.name ? card.name[0].toUpperCase() : card.contactNo.toString()[0] }}</div>
-    <mat-card-title>{{card.name}}</mat-card-title>
-    <mat-card-subtitle>{{card.contactNo}}</mat-card-subtitle>
+    <div mat-card-avatar [ngStyle]="setStyles(card)" 
+      class="contact-card-avatar">{{card.name ? card.name[0].toUpperCase() : card.contactNo.toString()[0] }}</div>
+    <mat-card-title class="contact-card-name">{{card.name}}</mat-card-title>
+    <mat-card-subtitle class="contact-card-number">{{card.contactNo}}</mat-card-subtitle>
   </mat-card-header>
 </mat-card>
