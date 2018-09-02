@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { Observable, of, BehaviorSubject } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { catchError, tap } from 'rxjs/operators';
 
 // import { ICard } from '../model/interface/ICard';
@@ -19,8 +20,13 @@ export class ContactsService {
 
   /** GET Contacts from the server */
   getContacts (): Observable<ContactCard[]> {
-    return this.http.get<ContactCard[]>(this.contactsUrl)
+    return this.http.get<ContactCard[]>(this.contactsUrl)    
       .pipe(
+        map(res => {
+          // var ret = <ContactCard[]>res.json();
+          res.sort((a,b) => a.name < b.name ? -1 : 1);
+          return res;
+      } ),
         tap(heroes => console.log('fetched contacts')),
         catchError(this.handleError('getContacts', []))
       );

@@ -10,7 +10,7 @@ import { ContactsService } from '../service/contacts.service';
 export class ContactCardComponent implements OnInit {
   contactCards: ContactCard[] = [];
   query: string;
-  private colorsMap: object = {};
+  colorsMap: object = {};
 
   constructor(private contactsService: ContactsService) { }
 
