@@ -27,4 +27,11 @@ describe('SearchBoxComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render searchbox', async(() => {
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    console.log(compiled.querySelector('input'));
+    expect(compiled.querySelector('input')).toBeDefined();
+  }));
 });

@@ -36,7 +36,7 @@ npm run start
 json-server --watch db.json
 ng serve --open
 ```
-Example Run
+* Example Run
 <img src="example/sampleRun.png">
 <img src="example/sampleScreenshot.png">
 

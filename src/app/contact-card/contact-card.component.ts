@@ -38,7 +38,6 @@ export class ContactCardComponent implements OnInit {
       this.colorsMap[alphabet[i]] = color;
       color = '#';
     }    
-    console.log(this.colorsMap);
   } 
 
   public setStyles(card): any {

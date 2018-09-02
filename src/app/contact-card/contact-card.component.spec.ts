@@ -26,4 +26,11 @@ describe('ContactCardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should generate random color for alphabet', async(() => {
+    component.populateRandomColor();
+    console.log(component.colorsMap['a']);
+    expect(component.colorsMap['a']).toBeDefined();
+  }  ));
+
 });
