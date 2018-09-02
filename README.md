@@ -1,27 +1,53 @@
-# PhonebookSearch
+# Phonebook Search
+A simple phonebook app built with Angular where users can search the contacts fetched from API.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+This project is generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
-## Development server
+## Assumptions & Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* I am using [json sever](https://github.com/typicode/json-server) to make make RESTful endpoints, contacts detail are sored in `db.json` in the root.
+* In order to run the application, port `3000` and port `4200`  should not be used by any other application.
+* By default the contact will appear sorted by name fashion.
+* The application can handle a contact without any name. To demonstrate that a contact with blank name has been created and its intentional.
+* The colors in the avatar are randomly genereted and signifies the initial letter of the name.
+* Only tested in `Chrome` and `Firefox` (Recent Versions).
 
-## Code scaffolding
+## Prerequisites & Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* You need to have [Node](https://nodejs.org) installed in your system.
 
-## Build
+## Run
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Open command line (Windows) or terminal (Mac) Navigate to the root directory of the project ~
+
+* Run the following to install all dependencies (Need to do it only once)
+
+```command line
+npm install
+```
+* Run the following to serve the application. it will open the application in the following url `http://localhost:4200/`
+
+```command line
+npm run start
+```
+* If by any chance the previous command does not run the application, you can run the following two commands sequentially and seperately to run the apllication.
+
+```command line
+json-server --watch db.json
+ng serve --open
+```
+Example Run
+<img src="example/sampleRun.png">
+<img src="example/sampleScreenshot.png">
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Areas of improvement
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Error Handling
+* Unit tests
+* Animation
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Thank You
