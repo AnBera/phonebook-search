@@ -2,6 +2,10 @@
     margin: 1em;
     border-radius: 8px;
     box-shadow: 0 2px 15px 0 rgba(0,0,0,0.2);
+
+    -webkit-animation: .4s ease-out 0s 1 slideUp;
+    animation: .4s ease-out 0s 1 slideUp;
+
     .contact-card-avatar {
         font-size: 1.5em;
         color: #fcfcfc;
@@ -22,3 +26,20 @@
         font-weight: 400;
     }
 }
+
+@-webkit-keyframes slideUp {
+    0% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+@keyframes slideUp {
+    0% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
