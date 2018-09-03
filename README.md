@@ -30,11 +30,11 @@ npm install
 ```command line
 npm run start
 ```
-* If by any chance the previous command does not run the application, you can run the following two commands sequentially and seperately to run the apllication.
+* If by any chance the previous command does not run the application(especially in windows), you can run the following two commands sequentially and seperately to run the apllication. And then open the url `http://localhost:4200/` in your browser.
 
 ```command line
-json-server --watch db.json
-ng serve --open
+npm run json:server
+npm run ng serve
 ```
 * Example Run
 <img src="example/sampleRun.png">
